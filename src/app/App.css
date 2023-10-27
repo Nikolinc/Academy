@@ -1,0 +1,30 @@
+:root{
+  --color-kobe:#7C2B1E;
+  --color-black:#000000;
+  --color-grey:#ffffff80;
+  --color-white:#ffffff;
+  --color-orange:#EF7B3C;
+  --color-light-silver:#D9D9D9;
+  --color-lime-greem:#4DEB32;
+  --color-red:#FF0000;
+  --color-crayola:#FF4D4D;
+  --color-granite-gray:#ffffff1a;
+  
+  --body-bg-color:var(--color-black);
+  --text-color-primary:var(--color-white);
+  --text-color-secondary:var(--color-grey);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: var(--body-bg-color);
+}
+
+.App{
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
