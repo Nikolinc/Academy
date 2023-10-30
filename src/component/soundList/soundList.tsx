@@ -1,6 +1,6 @@
 import { ISoundList } from "../../types/soundlist";
 import ArrowRight from "../../assets/Back.svg";
-import coin from '../../assets/Coin.svg';
+import Coin from '../../assets/Coin.svg';
 import './soundList.css'
 import { Link, } from "react-router-dom";
 import React from "react";
@@ -25,7 +25,7 @@ function SoundList(props: { soundList: ISoundList[] }) {
               <Link className="sound "
                 to={`/sound/${sound.key}`}>
                 <header>
-                  <div className="earn"><img src={coin} alt="Earn" width={25} height={26} /> Earn 2T</div>
+                  <div className="earn"><img src={Coin} alt="Earn" width={25} height={26} /> Earn 2T</div>
                   <div className="education" />
                 </header>
                 <footer className="footer-sound">
