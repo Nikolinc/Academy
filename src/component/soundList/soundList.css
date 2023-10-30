@@ -148,7 +148,7 @@
 .coin{
   width: 25px;
   height: 26px;
-  background-image: url('../../assets/Coin.svg');
+  background-image: url('../../assets/Coin.png');
   background-position: center;
   background-repeat: no-repeat;
 }
