@@ -1,0 +1,104 @@
+header{
+  width: 100%;
+  height: 5rem;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: none;
+}
+
+header>*{
+cursor: pointer;
+}
+
+header>.back{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  color: var(--Text-White, #FFF);
+/* Headline/H3 */
+  font-family: PT Root UI VF;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem; 
+}
+
+.filter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+
+}
+
+input[type=radio]{
+  display: none;
+}
+
+input:checked ~ label{
+  border-radius: 22px;
+  display: flex;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(4.077422618865967px);
+}
+.filter> button {
+  display: none;
+}
+
+.filter>div, .filter> button{
+  
+  list-style-type: none;
+  font-family: PT Root UI VF;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--text-color-secondary); 
+}
+.filter>div:hover, .filter> button:hover{
+  color: var(--text-color-primary); 
+}
+
+.header > button {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 21px;
+
+  /* Untitled/P1 */
+font-family: PT Root UI VF;
+font-size: 17px;
+font-weight: 700;
+line-height: 17px; /* 100% */
+}
+
+.modal-filter{
+  position: absolute;
+  left: 70%;
+  top:7%;
+  height: 3%;
+  width: 30%;
+  z-index: 1000;
+  padding: 2% 0;
+  background-color: var(--color-kobe);
+  filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+}
+
+@media (max-width: 1200px){
+  header>.filter>div{
+    display: none;
+  }
+  .filter> button{
+    display: block;
+  }
+}
