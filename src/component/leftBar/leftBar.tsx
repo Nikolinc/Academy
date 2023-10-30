@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Tilt from '../tagging/tagging';
 import './leftBar.css';
 import { Link } from "react-router-dom";
@@ -61,8 +61,8 @@ function LeftBar() {
           Help
         </Link>
         <div className="links-footers">
-          <Link  to={""}>Privacy & Policy</Link>
-          <Link  to={""}>Terms & Conditions</Link>
+          <Link to={""}>Privacy & Policy</Link>
+          <Link to={""}>Terms & Conditions</Link>
         </div>
       </div>
     </footer>

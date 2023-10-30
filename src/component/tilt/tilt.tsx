@@ -1,7 +1,7 @@
 
 import useTilt from '../../hooks/useTilt';
 import './tilt.css'
-import React, { useState } from "react";
+import { useState } from "react";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function Tilt(props: { children: any; classname: string, style: any }) {
