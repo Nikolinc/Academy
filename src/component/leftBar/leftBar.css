@@ -1,8 +1,12 @@
 
 .left-bar{
-  width: 90%;
+  position: fixed;
+  width: 20rem;
   height: 100vh;
-  margin: 0 auto;
+  left: 0;
+  background-color: var(--body-bg-color);
+  padding: 0 2%;
+  z-index: 1000;
 }
  
 .left-bar > .header {
@@ -37,7 +41,7 @@
 }
 
 input[type="search" i]{
-  width: 13.625rem;
+  width: 80%;
   height: 3.125rem;
   padding: 1rem;
   margin:1.87rem auto ;
@@ -60,7 +64,7 @@ input[type="search" i]::-webkit-search-cancel-button{
   background-repeat: no-repeat;
   background-size: 1.5rem;
   background-image: url('../../assets/Close.svg');
-  background-position:18% 50%;
+  background-position:8% 50%;
   cursor: pointer;
 }
 input[type="search" i]:focus input[type="search" i]{
@@ -84,7 +88,11 @@ input:not(:placeholder-shown){
   color:var(--text-color-secondary);
 }
 
-.navigation-bar > a{
+.Link{
+  display: flex;
+  align-items: center;
+  gap: 0.81rem;
+
   text-decoration: none;
   font-family: PT Root UI VF;
   font-size: 0.875rem;
@@ -93,6 +101,67 @@ input:not(:placeholder-shown){
   line-height: 1.125rem;
   text-transform:none;
   color:var(--text-color-primary);
- 
   cursor: pointer;
+}
+
+a:hover{
+  color: var(--color-orange);
+  fill: var(--color-orange);
+  stroke: var(--color-orange);
+}
+
+.navigation-bar > div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation-bar > div > h3{
+  background-color: var(--color-orange);
+  color:var(--text-color-primary);
+  padding: 0.3rem 0.5rem;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.image{
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 5rem;
+}
+
+.image > img{
+  position: absolute;  
+  border-radius: 100%; 
+  cursor: pointer;
+}
+
+.left-bar>footer{
+  display: flex;
+  align-items: end;
+  width: 100%;
+  height: 65vh;
+}
+
+.left-bar>footer > *{
+  width: 100%;
+}
+
+.links-footers{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links-footers>*{
+  margin-top: 2.5rem;
+  color: var(--text-50, rgba(255, 255, 255, 0.50));
+
+  text-decoration: none;
+  font-family: PT Root UI VF;
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0.75rem; 
 }
