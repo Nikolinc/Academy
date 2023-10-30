@@ -145,6 +145,13 @@
   font-weight: 700;
   line-height: 0.75rem;  
 }
+.coin{
+  width: 25px;
+  height: 26px;
+  background-image: url('../../assets/Coin.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .education{
   width: 1.9rem;
