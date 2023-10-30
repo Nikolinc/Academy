@@ -20,11 +20,98 @@
   padding: 0;
 }
 
-body{
-  background-color: var(--body-bg-color);
+
+*::-webkit-scrollbar {
+  width: 0.5rem;
 }
 
-.App{
-  display: grid;
-  grid-template-columns: 20% 80%;
+*::-webkit-scrollbar-track {
+  background:none;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var( --color-orange);
+  border-radius: 14px;
+  border:none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var( --color-orange);
+}
+
+
+body{
+  background-color: var(--body-bg-color);
+  overflow-x: hidden; 
+}
+
+button{
+  border: none;
+  background: none;
+}
+
+.page > *{
+  width: 75%;
+  margin: 0 auto;
+  overflow-x: hidden;  
+}
+
+
+.page{
+  margin-left: 17%;
+  width: 83%;
+  height: 100vh;
+  overflow-x: hidden;  
+}
+
+.page:has(.home){
+  background:linear-gradient(180deg, var(--color-kobe) 3.76%, var(--color-kobe) 40.76%, var(--color-black) 55.52%);
+}
+
+.page:has(.sound-page){
+  height: 100vh;
+  background: linear-gradient(182deg, #EF7E3C 3.76%, #F5B048 60.76%, #F7C64D 85.52%);
+}
+
+
+@media (max-width: 1700px){
+  .page > *{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .page{
+    margin-left: 25%;
+    width: 75%;  
+  }
+}
+
+
+@media (max-width: 1600px){
+  .page > *{
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1500px){
+  .page > *{
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1300px){
+  .page{
+    margin-left: 35%;
+    width: 65%;
+
+  }
+}
+
+@media (max-width: 1000px){
+  .page{
+    padding-left: 15%;
+    width: 65%;
+  }
 }
